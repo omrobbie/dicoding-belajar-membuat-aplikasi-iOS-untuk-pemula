@@ -13,6 +13,7 @@
 		FCFD707A24C451600081ADC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCFD707824C451600081ADC1 /* Main.storyboard */; };
 		FCFD707C24C451610081ADC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCFD707B24C451610081ADC1 /* Assets.xcassets */; };
 		FCFD707F24C451610081ADC1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCFD707D24C451610081ADC1 /* LaunchScreen.storyboard */; };
+		FCFD708B24C4565F0081ADC1 /* Wonder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFD708A24C4565F0081ADC1 /* Wonder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		FCFD707B24C451610081ADC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FCFD707E24C451610081ADC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FCFD708024C451610081ADC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCFD708A24C4565F0081ADC1 /* Wonder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wonder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		FCFD707124C451600081ADC1 /* WoW */ = {
 			isa = PBXGroup;
 			children = (
+				FCFD708924C4564D0081ADC1 /* Model */,
 				FCFD708624C452120081ADC1 /* View */,
 				FCFD708724C452190081ADC1 /* Controller */,
 				FCFD708824C452200081ADC1 /* Base */,
@@ -89,6 +92,14 @@
 				FCFD707424C451600081ADC1 /* SceneDelegate.swift */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		FCFD708924C4564D0081ADC1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FCFD708A24C4565F0081ADC1 /* Wonder.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,6 +175,7 @@
 			files = (
 				FCFD707724C451600081ADC1 /* HomeVC.swift in Sources */,
 				FCFD707324C451600081ADC1 /* AppDelegate.swift in Sources */,
+				FCFD708B24C4565F0081ADC1 /* Wonder.swift in Sources */,
 				FCFD707524C451600081ADC1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
