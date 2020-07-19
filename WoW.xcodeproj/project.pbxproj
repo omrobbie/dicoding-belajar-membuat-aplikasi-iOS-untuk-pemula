@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		FCFD707324C451600081ADC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFD707224C451600081ADC1 /* AppDelegate.swift */; };
 		FCFD707524C451600081ADC1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFD707424C451600081ADC1 /* SceneDelegate.swift */; };
-		FCFD707724C451600081ADC1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFD707624C451600081ADC1 /* ViewController.swift */; };
+		FCFD707724C451600081ADC1 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFD707624C451600081ADC1 /* HomeVC.swift */; };
 		FCFD707A24C451600081ADC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCFD707824C451600081ADC1 /* Main.storyboard */; };
 		FCFD707C24C451610081ADC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCFD707B24C451610081ADC1 /* Assets.xcassets */; };
 		FCFD707F24C451610081ADC1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCFD707D24C451610081ADC1 /* LaunchScreen.storyboard */; };
@@ -19,7 +19,7 @@
 		FCFD706F24C451600081ADC1 /* WoW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WoW.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCFD707224C451600081ADC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FCFD707424C451600081ADC1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FCFD707624C451600081ADC1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FCFD707624C451600081ADC1 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		FCFD707924C451600081ADC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FCFD707B24C451610081ADC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FCFD707E24C451610081ADC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,15 +56,39 @@
 		FCFD707124C451600081ADC1 /* WoW */ = {
 			isa = PBXGroup;
 			children = (
-				FCFD707224C451600081ADC1 /* AppDelegate.swift */,
-				FCFD707424C451600081ADC1 /* SceneDelegate.swift */,
-				FCFD707624C451600081ADC1 /* ViewController.swift */,
-				FCFD707824C451600081ADC1 /* Main.storyboard */,
+				FCFD708624C452120081ADC1 /* View */,
+				FCFD708724C452190081ADC1 /* Controller */,
+				FCFD708824C452200081ADC1 /* Base */,
 				FCFD707B24C451610081ADC1 /* Assets.xcassets */,
 				FCFD707D24C451610081ADC1 /* LaunchScreen.storyboard */,
 				FCFD708024C451610081ADC1 /* Info.plist */,
 			);
 			path = WoW;
+			sourceTree = "<group>";
+		};
+		FCFD708624C452120081ADC1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FCFD707824C451600081ADC1 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FCFD708724C452190081ADC1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FCFD707624C451600081ADC1 /* HomeVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FCFD708824C452200081ADC1 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				FCFD707224C451600081ADC1 /* AppDelegate.swift */,
+				FCFD707424C451600081ADC1 /* SceneDelegate.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +162,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FCFD707724C451600081ADC1 /* ViewController.swift in Sources */,
+				FCFD707724C451600081ADC1 /* HomeVC.swift in Sources */,
 				FCFD707324C451600081ADC1 /* AppDelegate.swift in Sources */,
 				FCFD707524C451600081ADC1 /* SceneDelegate.swift in Sources */,
 			);
