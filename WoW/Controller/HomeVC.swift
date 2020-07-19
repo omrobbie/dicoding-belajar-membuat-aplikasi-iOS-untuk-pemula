@@ -19,9 +19,8 @@ class HomeVC: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell")!
-        let item = wonders[indexPath.row]
-        cell.textLabel?.text = item.title
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as? HomeCell else {return UITableViewCell()}
+        cell.wonder = wonders[indexPath.row]
         return cell
     }
 
