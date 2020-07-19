@@ -10,10 +10,6 @@ import UIKit
 
 class HomeVC: UITableViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return wonders.count
     }
@@ -26,5 +22,12 @@ class HomeVC: UITableViewController {
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+
+        if let vc = storyboard?.instantiateViewController(withIdentifier: "DetailVC") as? DetailVC {
+            let item = wonders[indexPath.row]
+            vc.wonder = item
+            vc.title = item.title
+            navigationController?.pushViewController(vc, animated: true)
+        }
     }
 }
